@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  #root, .wrapper{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  h1{
+    text-align: center;
+    color: darkgreen;
+  }
+  
+  .content{
+    width: 100%;
+  }
+  
+  .toDoList{
+    width: 300px;
+    height: 300px;
+    background: lightgrey;
+    margin: 5% auto;
+    position: relative;
+    overflow: auto;
+    border-radius: 6px;
+  }
+  
+  .toDoList_header, .toDoList_footer{
+    width: 100%;
+    height: 40px;
+    background: silver;
+    position: relative;
+  }
+  
+  .toDoList_header{
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .toDoList_footer{
+    position: absolute;
+    top: 260px;
+    border-top: 1px solid darkgrey;
+  }
+  
+  .left{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .text_input, button{
+    height: 25px;
+    border-radius: 7px;
+    border: none;
+    position: absolute;
+    top: 7px; 
+  }
+  
+  .text_input{
+    left: 5%;
+    width: 70%;
+  }
+  
+  .text_input:focus{
+    outline: none;
+  }
+  
+  button{
+    right: 5%;
+  }
+  
+  button:hover{
+    transform: scale(1.2);
+  }
+  
+  .list-item{
+    background: silver;
+    width: 95%;
+    height: 45px;
+    display: flex;
+    margin: 5px auto;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid darkgrey;
+  }
+  
+  .list-item input {
+    position: absolute;
+    top: 14px;
+  }
+  
+  .list-item span {
+    position: absolute;
+    left: 30px;
+    top: 14px;
+  }
+  
+  .is-pulled-right{
+    background: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    color: white;
+  }
+  
+  .todoList{
+    width: 100%;
+    height: 220px;
+    overflow: auto;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .checked_true{
+    text-decoration-line: line-through;  
+    text-decoration-color: blue;
+  }
+  
+  .checked_btn{
+    background-color: blue;
+  }
+
+  
+::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+/*   background: dimgray;  */
+  background: gray;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray; 
+}
